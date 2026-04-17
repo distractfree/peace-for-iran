@@ -226,14 +226,18 @@
       <div class="container narrow">
         <h2>Support the Initiative</h2>
         <p>Use this page to gather signatories, media interest, and supporter messages. For fastest launch, deploy on Netlify so the form works immediately.</p>
-        <form name="support" method="POST" data-netlify="true" class="support-form">
-          <input type="hidden" name="form-name" value="support" />
-          <input type="text" name="name" placeholder="Full name" required />
-          <input type="email" name="email" placeholder="Email address" required />
-          <input type="text" name="organization" placeholder="Organization (optional)" />
-          <textarea name="message" rows="5" placeholder="Why you support this initiative"></textarea>
-          <button type="submit" class="btn">Submit Support</button>
-        </form>
+<form name="endorse" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="endorse">
+
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="number" name="age" placeholder="Age">
+  <input type="text" name="state" placeholder="State (if US)">
+  <input type="text" name="zip" placeholder="ZIP Code (if US)">
+  <input type="text" name="country" placeholder="Country" required>
+
+  <button type="submit">Endorse</button>
+</form>
         <p class="small-note">Fastest path: publish this on Netlify, attach your current .docx or PDF to the “Read the Framework” button, and begin controlled one-to-one outreach before broad publicity.</p>
       </div>
     </section>
